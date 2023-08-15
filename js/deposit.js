@@ -2,7 +2,7 @@
 document.getElementById('btn-deposit').addEventListener('click',function(){
 
     // STEP 02: GET INPUT VALUE AND CHECK TYPE OF VALUE 
-    const inputValue = document.getElementById('deposit-ammonut');
+    const inputValue = document.getElementById('deposit-amount');
     const value = inputValue.value;
     console.log(value, typeof value);
 
