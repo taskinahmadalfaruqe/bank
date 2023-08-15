@@ -8,10 +8,57 @@
 </head>
 <body>
     <header class="space-y-5 mt-[50px]">
-        <h1 class="font-semibold text-5xl text-center">WOW lets Get Some <samp class="text-purple-800">Money</samp>!!!</h1>
-      
+        <h1 class="font-semibold text-3xl md:text-5xl text-center">WOW lets Get Some <samp class="text-purple-800">Money</samp>!!!</h1>
     </header>
+    <main class="mx-auto px-10 text-white mt-[50px] space-y-5">
+        <!-- DEPOSIT && WITHDRAW && CURRENT BALANCE  -->
 
-    <script src="js/login.js"></script>
+        <!-- DEPOSIT PART START  -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-5 ">
+            <!-- DEPOSIT PART START  -->
+            <div class="deposit bg-green-400 rounded-lg p-5 lg:py-10 lg:px-5 space-y-1 lg:space-y-3">
+                <h3 class=" text-xl lg:text-2xl font-semibold uppercase">Deposit</h3>
+                <h2 class="text-3xl">$<span id="deposit">00</span></h2>
+            </div>
+            <!-- DEPOSIT PART END  -->
+
+            <!-- WITHDRAW PART START  -->
+            <div class="deposit bg-amber-400 rounded-lg p-5 lg:py-10 lg:px-5 space-y-1 lg:space-y-3">
+                <h3 class=" text-xl lg:text-2xl font-semibold uppercase">WITHDRAW</h3>
+                <h2 class="text-3xl">$<span id="withdraw">00</span></h2>
+            </div>
+            <!-- WITHDRAW PART END  -->
+
+            <!-- CURRENT BALANCE PART START -->
+            <div class="blance bg-purple-500 rounded-lg p-5 lg:py-10 lg:px-5 space-y-1 lg:space-y-3">
+                <h3 class=" text-xl lg:text-2xl font-semibold uppercase">current balance</h3>
+                <h2 class="text-3xl">$<span id="balance">1240</span></h2>
+            </div>
+            <!-- CURRENT BALANCE PART END -->
+
+        </section>
+     
+
+        <!-- DEPOSIT AND WITHDRAW  -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-5 text-center">
+            <!-- DEPOSIT PART START  -->
+            <div class="deposit bg-pink-400 rounded-lg p-3 lg:py-10 lg:px-5 space-y-3 lg:space-y-5">
+                <h3 class=" text-xl lg:text-2xl font-semibold uppercase">Please Deposit</h3>
+                <input type="number" name="" id="deposit-ammonut" placeholder="$ Enter Your Amount" class="focus:outline-none block w-3/4 mx-auto rounded-md pl-3 md:pl-5 py-2 text-black">
+                <button id="btn-deposit" type="submit" class="uppercase text-sm lg:text-xl font-medium lg:font-bold bg-orange-500 px-5 py-2 rounded-lg border-[1px] border-white hover:bg-white hover:text-orange-500 hover:border-orange-500 transition-all duration-200">Deposit</button>
+            </div>
+            <!-- DEPOSIT PART END  -->
+
+            <!-- WITHDRAW PART START  -->
+            <div class="deposit bg-sky-400 rounded-lg p-3 lg:py-10 lg:px-5 space-y-3 lg:space-y-5">
+                <h3 class=" text-xl lg:text-2xl font-semibold uppercase">Please Withdraw</h3>
+                <input type="number" name="" id="withdraw-ammonut" placeholder="$ Enter Your Amount" class="focus:outline-none block w-3/4 mx-auto rounded-md pl-3 md:pl-5 py-2 text-black">
+                <button id="btn-withdraw" type="submit" class="uppercase text-sm lg:text-xl font-medium lg:font-bold bg-orange-500 px-5 py-2 rounded-lg border-[1px] border-white hover:bg-white hover:text-orange-500 hover:border-orange-500 transition-all duration-200">withdraw</button>
+            </div>
+            <!-- WITHDRAW PART END  -->
+        </section>
+    </main>
+
+    <script src="js/bank.js"></script>
 </body>
 </html>
