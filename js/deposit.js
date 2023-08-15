@@ -4,13 +4,17 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
     // STEP 02: GET INPUT VALUE AND CHECK TYPE OF VALUE 
     const inputValue = document.getElementById('deposit-amount');
     const value = inputValue.value;
-    console.log(value, typeof value);
-
-
-    // STEP 03:  CONVERT VALUE STRING TO NUMBER;
-    const numberValue=parseFloat(value);
+    const numberValue=parseFloat(value); // CONVERT VALUE STRING TO NUMBER;
     console.log(numberValue, typeof numberValue);
 
+
+    // STEP 03: CLEAR THE DEPOSIT FIELD
+    inputValue.value='';
+        // INPUT VALUE VALIDATION 
+        if(value<=0){
+            alert("Please Enter Positive Amount");
+            return;
+        }
 
     // STEP 04: GET DEPOSIT NUMBER USING INNER TEXT;
     const previousDeposit= document.getElementById('deposit');
@@ -38,6 +42,4 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
     let newBalance = currentBalance;
     console.log(newBalance);
 
-    // STEP 08: CLEAR THE DEPOSIT FIELD
-    inputValue.value='';
 })
